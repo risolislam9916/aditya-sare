@@ -4,117 +4,872 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>অদ্বিতীয়া শাড়ী | Premium Saree Collection</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700;800&display=swap" rel="stylesheet">
+
 <style>
-:root{--cream:#fffaf0;--maroon:#8d1238;--deep:#650d2b;--muted:#77666b;--line:#eadfce}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Noto Sans Bengali",sans-serif;background:var(--cream);color:#351d25}
-a{text-decoration:none;color:inherit}.container{width:min(1180px,92%);margin:auto}
-header{position:sticky;top:0;z-index:10;background:#fffdf8ee;border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
-.nav{height:70px;display:flex;align-items:center;justify-content:space-between;gap:15px}.brand{display:flex;align-items:center;gap:9px;font-size:23px;font-weight:800;color:var(--deep)}.brand img{width:45px;height:45px;border-radius:50%;object-fit:cover}.navlinks{display:flex;gap:22px;font-size:14px}.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--maroon);color:#fff;border:0;border-radius:999px;padding:12px 21px;font-weight:800;cursor:pointer}.btn.light{background:#fff;color:var(--maroon);border:1px solid #e3bda9}
-.hero{padding:55px 0;background:linear-gradient(110deg,#fffaf0,#f8ead7)}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}.eyebrow{color:var(--maroon);font-weight:800}.hero h1{font-size:clamp(35px,5vw,60px);line-height:1.2;color:var(--deep);margin:15px 0}.hero p{font-size:18px;color:var(--muted)}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.hero-card,.visual{border-radius:28px;background:linear-gradient(145deg,#8d1238,#d9a04d);min-height:420px;display:grid;place-items:center;color:#fff;font-size:55px;font-weight:800;text-align:center;box-shadow:0 20px 50px #4b201f22}
-.trust{background:#fff;padding:22px 0;border-bottom:1px solid var(--line)}.trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}.trust-item{text-align:center;padding:8px;border-right:1px solid var(--line)}.trust-item:last-child{border:0}.icon{font-size:28px}.trust-item strong{display:block;color:var(--deep)}
-section{padding:65px 0}.section-head{text-align:center;margin-bottom:30px}.section-head h2{color:var(--deep);font-size:32px;margin:0 0 7px}.section-head p{color:var(--muted);margin:0}
-.products{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.product{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 8px 25px #4022140f}.product-img{height:280px;background:linear-gradient(135deg,#7f1638,#d9a04d);display:grid;place-items:center;color:#fff;font-weight:800;overflow:hidden}.product-img img{width:100%;height:100%;object-fit:cover}.product-body{padding:17px}.product h3{margin:4px 0;color:var(--deep)}.product p{font-size:13px;color:var(--muted);min-height:42px}.old{text-decoration:line-through;color:#9b8c90;font-size:13px;margin-right:7px}.price{font-size:21px;font-weight:800;color:var(--maroon)}.badge{display:inline-block;background:#f7e4b9;color:var(--deep);padding:3px 9px;border-radius:20px;font-size:11px;font-weight:800}.loading,.error{grid-column:1/-1;text-align:center;background:#fff;padding:30px;border-radius:16px;border:1px solid var(--line)}
-.feature{background:linear-gradient(110deg,#f8e9d3,#fffaf0)}.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.checks{display:grid;gap:12px}.check{background:#fff;border:1px solid var(--line);border-radius:13px;padding:12px}.check b{color:var(--maroon)}
-.reviews,.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.review,.step,.formbox,.faq{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px}.stars{color:#d99b1e}.offer{background:var(--maroon);color:#fff}.offer-grid{display:flex;justify-content:space-between;align-items:center;gap:20px}.offer h2{margin:0}
-.order-wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:25px}label{display:block;font-size:13px;font-weight:700;margin:12px 0 5px}input,select,textarea{width:100%;padding:12px;border:1px solid #decfc2;border-radius:10px;font:inherit}.full{width:100%;margin-top:15px}.faq details{padding:12px 0;border-bottom:1px solid var(--line)}summary{font-weight:700;cursor:pointer}
-.final{text-align:center;background:linear-gradient(110deg,#fff4df,#f2ddbf)}.final h2{color:var(--deep)}footer{background:#4b0b22;color:#fff;padding:28px 0 90px}.footer{display:flex;justify-content:space-between}.whatsapp{position:fixed;right:15px;bottom:15px;background:#1ca866;color:#fff;padding:12px 18px;border-radius:999px;font-weight:800;z-index:20}
-@media(max-width:900px){.navlinks{display:none}.hero-grid,.feature-grid,.order-wrap{grid-template-columns:1fr}.products{grid-template-columns:repeat(2,1fr)}.trust-grid{grid-template-columns:repeat(2,1fr)}.reviews,.steps{grid-template-columns:1fr}}
-@media(max-width:520px){.brand{font-size:18px}.products{grid-template-columns:1fr}.hero-card,.visual{min-height:300px}.offer-grid,.footer{flex-direction:column;text-align:center}.section-head h2{font-size:28px}}
+:root{
+--cream:#fffaf0;
+--maroon:#8d1238;
+--deep:#650d2b;
+--muted:#77666b;
+--line:#eadfce
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+margin:0;
+font-family:"Noto Sans Bengali",sans-serif;
+background:var(--cream);
+color:#351d25
+}
+a{text-decoration:none;color:inherit}
+.container{width:min(1180px,92%);margin:auto}
+
+header{
+position:sticky;
+top:0;
+z-index:10;
+background:#fffdf8ee;
+border-bottom:1px solid var(--line);
+backdrop-filter:blur(10px)
+}
+.nav{
+height:70px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:15px
+}
+.brand{
+display:flex;
+align-items:center;
+gap:9px;
+font-size:23px;
+font-weight:800;
+color:var(--deep)
+}
+.brand img{
+width:45px;
+height:45px;
+border-radius:50%;
+object-fit:cover
+}
+.navlinks{
+display:flex;
+gap:22px;
+font-size:14px
+}
+.btn{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+background:var(--maroon);
+color:#fff;
+border:0;
+border-radius:999px;
+padding:12px 21px;
+font-weight:800;
+cursor:pointer
+}
+.btn.light{
+background:#fff;
+color:var(--maroon);
+border:1px solid #e3bda9
+}
+
+.hero{
+padding:55px 0;
+background:linear-gradient(110deg,#fffaf0,#f8ead7)
+}
+.hero-grid{
+display:grid;
+grid-template-columns:1.05fr .95fr;
+gap:40px;
+align-items:center
+}
+.eyebrow{
+color:var(--maroon);
+font-weight:800
+}
+.hero h1{
+font-size:clamp(35px,5vw,60px);
+line-height:1.2;
+color:var(--deep);
+margin:15px 0
+}
+.hero p{
+font-size:18px;
+color:var(--muted)
+}
+.actions{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+margin-top:22px
+}
+.hero-card,.visual{
+border-radius:28px;
+background:linear-gradient(145deg,#8d1238,#d9a04d);
+min-height:420px;
+display:grid;
+place-items:center;
+color:#fff;
+font-size:55px;
+font-weight:800;
+text-align:center;
+box-shadow:0 20px 50px #4b201f22
+}
+
+.trust{
+background:#fff;
+padding:22px 0;
+border-bottom:1px solid var(--line)
+}
+.trust-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr)
+}
+.trust-item{
+text-align:center;
+padding:8px;
+border-right:1px solid var(--line)
+}
+.trust-item:last-child{border:0}
+.icon{font-size:28px}
+.trust-item strong{
+display:block;
+color:var(--deep)
+}
+
+section{padding:65px 0}
+.section-head{
+text-align:center;
+margin-bottom:30px
+}
+.section-head h2{
+color:var(--deep);
+font-size:32px;
+margin:0 0 7px
+}
+.section-head p{
+color:var(--muted);
+margin:0
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px
+}
+.product{
+background:#fff;
+border:1px solid var(--line);
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 8px 25px #4022140f
+}
+.product-img{
+height:280px;
+background:linear-gradient(135deg,#7f1638,#d9a04d);
+display:grid;
+place-items:center;
+color:#fff;
+font-weight:800;
+overflow:hidden
+}
+.product-img img{
+width:100%;
+height:100%;
+object-fit:cover
+}
+.product-body{padding:17px}
+.product h3{
+margin:4px 0;
+color:var(--deep)
+}
+.product p{
+font-size:13px;
+color:var(--muted);
+min-height:42px
+}
+.old{
+text-decoration:line-through;
+color:#9b8c90;
+font-size:13px;
+margin-right:7px
+}
+.price{
+font-size:21px;
+font-weight:800;
+color:var(--maroon)
+}
+.badge{
+display:inline-block;
+background:#f7e4b9;
+color:var(--deep);
+padding:3px 9px;
+border-radius:20px;
+font-size:11px;
+font-weight:800
+}
+.loading,.error{
+grid-column:1/-1;
+text-align:center;
+background:#fff;
+padding:30px;
+border-radius:16px;
+border:1px solid var(--line)
+}
+
+.feature{
+background:linear-gradient(110deg,#f8e9d3,#fffaf0)
+}
+.feature-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center
+}
+.checks{display:grid;gap:12px}
+.check{
+background:#fff;
+border:1px solid var(--line);
+border-radius:13px;
+padding:12px
+}
+.check b{color:var(--maroon)}
+
+.reviews,.steps{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px
+}
+.review,.step,.formbox,.faq{
+background:#fff;
+border:1px solid var(--line);
+border-radius:18px;
+padding:20px
+}
+.stars{color:#d99b1e}
+
+.offer{
+background:var(--maroon);
+color:#fff
+}
+.offer-grid{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:20px
+}
+.offer h2{margin:0}
+
+.order-wrap{
+display:grid;
+grid-template-columns:1.1fr .9fr;
+gap:25px
+}
+label{
+display:block;
+font-size:13px;
+font-weight:700;
+margin:12px 0 5px
+}
+input,select,textarea{
+width:100%;
+padding:12px;
+border:1px solid #decfc2;
+border-radius:10px;
+font:inherit
+}
+.full{
+width:100%;
+margin-top:15px
+}
+
+.faq details{
+padding:12px 0;
+border-bottom:1px solid var(--line)
+}
+summary{
+font-weight:700;
+cursor:pointer
+}
+
+.final{
+text-align:center;
+background:linear-gradient(110deg,#fff4df,#f2ddbf)
+}
+.final h2{color:var(--deep)}
+
+footer{
+background:#4b0b22;
+color:#fff;
+padding:28px 0 90px
+}
+.footer{
+display:flex;
+justify-content:space-between
+}
+
+.whatsapp{
+position:fixed;
+right:15px;
+bottom:15px;
+background:#1ca866;
+color:#fff;
+padding:12px 18px;
+border-radius:999px;
+font-weight:800;
+z-index:20
+}
+
+@media(max-width:900px){
+.navlinks{display:none}
+.hero-grid,.feature-grid,.order-wrap{
+grid-template-columns:1fr
+}
+.products{
+grid-template-columns:repeat(2,1fr)
+}
+.trust-grid{
+grid-template-columns:repeat(2,1fr)
+}
+.reviews,.steps{
+grid-template-columns:1fr
+}
+}
+
+@media(max-width:520px){
+.brand{font-size:18px}
+.products{grid-template-columns:1fr}
+.hero-card,.visual{min-height:300px}
+.offer-grid,.footer{
+flex-direction:column;
+text-align:center
+}
+.section-head h2{font-size:28px}
+}
 </style>
 </head>
+
 <body>
-<header><div class="container nav">
-<a class="brand" href="#"><img src="logo.jpg" alt="অদ্বিতীয়া শাড়ী"><span>অদ্বিতীয়া শাড়ী</span></a>
-<nav class="navlinks"><a href="#collection">কালেকশন</a><a href="#gallery">গ্যালারি</a><a href="#reviews">রিভিউ</a><a href="#faq">FAQ</a></nav>
+
+<header>
+<div class="container nav">
+
+<a class="brand" href="#">
+<img src="logo.jpg" alt="অদ্বিতীয়া শাড়ী">
+<span>অদ্বিতীয়া শাড়ী</span>
+</a>
+
+<nav class="navlinks">
+<a href="#collection">কালেকশন</a>
+<a href="#gallery">গ্যালারি</a>
+<a href="#reviews">রিভিউ</a>
+<a href="#faq">FAQ</a>
+</nav>
+
 <a class="btn" href="#order">🛍️ অর্ডার করুন</a>
-</div></header>
 
-<section class="hero"><div class="container hero-grid"><div>
+</div>
+</header>
+
+<section class="hero">
+<div class="container hero-grid">
+
+<div>
 <span class="eyebrow">🌸 Premium Saree Collection</span>
-<h1>আপনার সৌন্দর্যে হোক <span style="color:var(--maroon)">অদ্বিতীয়তার</span> ছোঁয়া ✨</h1>
-<p>ঐতিহ্য, সৌন্দর্য ও আধুনিকতার মেলবন্ধনে বেছে নিন আপনার পছন্দের শাড়ী।</p>
-<div class="actions"><a class="btn" href="#order">🛍️ এখনই অর্ডার করুন</a><a class="btn light" href="https://wa.me/8801620393017">💬 WhatsApp</a></div>
-</div><div class="hero-card">SAREE<br><small>✨ নতুন কালেকশন</small></div></div></section>
 
-<section class="trust"><div class="container trust-grid">
-<div class="trust-item"><div class="icon">💯</div><strong>Original Product</strong><small>মানসম্মত পণ্যের অঙ্গীকার</small></div>
-<div class="trust-item"><div class="icon">💎</div><strong>Premium Quality</strong><small>বাছাই করা সুন্দর শাড়ী</small></div>
-<div class="trust-item"><div class="icon">🚚</div><strong>Home Delivery</strong><small>ঘরে বসেই অর্ডার করুন</small></div>
-<div class="trust-item"><div class="icon">🎧</div><strong>Customer Support</strong><small>অর্ডারের আগে ও পরে পাশে আছি</small></div>
-</div></section>
+<h1>
+আপনার সৌন্দর্যে হোক
+<span style="color:var(--maroon)">অদ্বিতীয়তার</span>
+ছোঁয়া ✨
+</h1>
 
-<section id="collection"><div class="container"><div class="section-head"><h2>জনপ্রিয় শাড়ী সমূহ</h2><p>Supabase থেকে স্বয়ংক্রিয়ভাবে লোড হচ্ছে</p></div>
-<div class="products" id="productsGrid"><div class="loading">⏳ শাড়ীর কালেকশন লোড হচ্ছে...</div></div></div></section>
+<p>
+ঐতিহ্য, সৌন্দর্য ও আধুনিকতার মেলবন্ধনে
+বেছে নিন আপনার পছন্দের শাড়ী।
+</p>
 
-<section class="feature"><div class="container feature-grid"><div class="visual">SAREE<br>COLLECTION</div><div><div class="section-head" style="text-align:left"><h2>একটি শাড়ী, অসংখ্য সুন্দর মুহূর্ত ❤️</h2><p>আপনার বিশেষ দিনকে আরও স্মরণীয় করে তুলুন।</p></div><div class="checks"><div class="check">💍 <b>বিয়ে ও দাওয়াতের জন্য</b></div><div class="check">🎉 <b>পারিবারিক অনুষ্ঠানে</b></div><div class="check">🌺 <b>পূজা ও উৎসবে</b></div><div class="check">✨ <b>বিশেষ দিনের সাজে</b></div><div class="check">🎁 <b>উপহার দেওয়ার জন্যও আদর্শ</b></div></div></div></div></section>
+<div class="actions">
+<a class="btn" href="#order">🛍️ এখনই অর্ডার করুন</a>
+<a class="btn light" href="https://wa.me/8801620393017">💬 WhatsApp</a>
+</div>
+</div>
 
-<section id="gallery"><div class="container"><div class="section-head"><h2>আমাদের গ্যালারি</h2><p>প্রতিটি শাড়ীর সৌন্দর্য কাছ থেকে দেখুন</p></div><div class="products"><div class="visual" style="min-height:150px;font-size:22px">পাড়</div><div class="visual" style="min-height:150px;font-size:22px">কাপড়</div><div class="visual" style="min-height:150px;font-size:22px">আঁচল</div><div class="visual" style="min-height:150px;font-size:22px">ব্লাউজ</div></div></div></section>
+<div class="hero-card">
+SAREE
+<br>
+<small>✨ নতুন কালেকশন</small>
+</div>
 
-<section id="reviews"><div class="container"><div class="section-head"><h2>আমাদের কাস্টমাররাই আমাদের সবচেয়ে বড় পরিচয়</h2><p>আপনাদের ভালোবাসাই আমাদের অনুপ্রেরণা</p></div><div class="reviews">
-<div class="review"><b>রাইহানা আক্তার</b><div class="stars">★★★★★</div><p>“শাড়ীটি খুব সুন্দর। হাতে পেয়ে ছবির চেয়েও ভালো লেগেছে।”</p></div>
-<div class="review"><b>মাহমুদা ইসলাম</b><div class="stars">★★★★★</div><p>“কাপড়ের মান ও কাজ দুটোই সুন্দর। আবার অর্ডার করব।”</p></div>
-<div class="review"><b>সাবিনা রহমান</b><div class="stars">★★★★★</div><p>“প্যাকেজিং সুন্দর ছিল এবং শাড়ীটি খুবই পছন্দ হয়েছে।”</p></div>
-</div></div></section>
+</div>
+</section>
 
-<section class="offer"><div class="container offer-grid"><div><h2>🔥 বিশেষ অফার চলছে!</h2><p>আপনার পছন্দের শাড়ীটি আজই অর্ডার করুন।</p></div><a class="btn light" href="#order">এখনই অর্ডার করুন</a></div></section>
+<section class="trust">
+<div class="container trust-grid">
 
-<section><div class="container"><div class="section-head"><h2>কীভাবে অর্ডার করবেন?</h2><p>মাত্র ৩টি সহজ ধাপে</p></div><div class="steps">
-<div class="step"><b>01</b><h3>শাড়ী নির্বাচন করুন</h3><p>আপনার পছন্দের কালেকশন বেছে নিন।</p></div>
-<div class="step"><b>02</b><h3>আপনার তথ্য দিন</h3><p>নাম, মোবাইল ও ঠিকানা দিন।</p></div>
-<div class="step"><b>03</b><h3>অর্ডার কনফার্ম করুন</h3><p>WhatsApp-এ অর্ডার পাঠান।</p></div>
-</div></div></section>
+<div class="trust-item">
+<div class="icon">💯</div>
+<strong>Original Product</strong>
+<small>মানসম্মত পণ্যের অঙ্গীকার</small>
+</div>
 
-<section id="order"><div class="container order-wrap"><div class="formbox"><h3>আপনার অর্ডারটি এখনই কনফার্ম করুন</h3>
-<form id="orderForm"><label>নাম *</label><input id="name" required placeholder="আপনার নাম">
-<label>মোবাইল নম্বর *</label><input id="phone" required inputmode="tel" pattern="01[3-9][0-9]{8}" maxlength="11" placeholder="01XXXXXXXXX">
-<label>সম্পূর্ণ ঠিকানা *</label><textarea id="address" required rows="3" placeholder="বাড়ি, রোড, এলাকা, জেলা"></textarea>
-<label>শাড়ী নির্বাচন করুন</label><select id="product"><option>⏳ লোড হচ্ছে...</option></select>
-<label>Quantity</label><input id="qty" type="number" min="1" value="1">
-<button class="btn full" type="submit">🛍️ অর্ডার কনফার্ম করুন</button></form></div>
-<div class="faq" id="faq"><h3>প্রশ্নোত্তর (FAQ)</h3><details><summary>ডেলিভারি কত দিনে হবে?</summary><p>আপনার এলাকার ওপর ডেলিভারি সময় নির্ভর করবে।</p></details><details><summary>Cash on Delivery আছে?</summary><p>হ্যাঁ, প্রযোজ্য পণ্যের ক্ষেত্রে।</p></details><details><summary>শাড়ীর সাথে ব্লাউজ পিস আছে?</summary><p>পণ্যের বিবরণে উল্লেখ করা থাকবে।</p></details><details><summary>Exchange/Return করা যায়?</summary><p>সমস্যা হলে দ্রুত WhatsApp-এ যোগাযোগ করুন।</p></details></div></div></section>
+<div class="trust-item">
+<div class="icon">💎</div>
+<strong>Premium Quality</strong>
+<small>বাছাই করা সুন্দর শাড়ী</small>
+</div>
 
-<section class="final"><div class="container"><h2>অদ্বিতীয়া শাড়ী—আপনার সৌন্দর্যের নিজস্ব গল্প। ❤️</h2><p>আজই আপনার পছন্দের শাড়ীটি বেছে নিন।</p><a class="btn" href="#order">🛍️ এখনই অর্ডার করুন</a></div></section>
-<footer><div class="container footer"><div><b>অদ্বিতীয়া শাড়ী</b><br><small>ঐতিহ্য • সৌন্দর্য • আধুনিকতা</small></div><small>© 2026 অদ্বিতীয়া শাড়ী — সর্বস্বত্ব সংরক্ষিত</small></div></footer>
-<a class="whatsapp" href="https://wa.me/8801620393017">💬 WhatsApp-এ অর্ডার</a>
+<div class="trust-item">
+<div class="icon">🚚</div>
+<strong>Home Delivery</strong>
+<small>ঘরে বসেই অর্ডার করুন</small>
+</div>
+
+<div class="trust-item">
+<div class="icon">🎧</div>
+<strong>Customer Support</strong>
+<small>অর্ডারের আগে ও পরে পাশে আছি</small>
+</div>
+
+</div>
+</section>
+
+<section id="collection">
+<div class="container">
+
+<div class="section-head">
+<h2>জনপ্রিয় শাড়ী সমূহ</h2>
+<p>Supabase থেকে স্বয়ংক্রিয়ভাবে লোড হচ্ছে</p>
+</div>
+
+<div class="products" id="productsGrid">
+<div class="loading">⏳ শাড়ীর কালেকশন লোড হচ্ছে...</div>
+</div>
+
+</div>
+</section>
+
+<section class="feature">
+<div class="container feature-grid">
+
+<div class="visual">
+SAREE
+<br>
+COLLECTION
+</div>
+
+<div>
+<div class="section-head" style="text-align:left">
+<h2>একটি শাড়ী, অসংখ্য সুন্দর মুহূর্ত ❤️</h2>
+<p>আপনার বিশেষ দিনকে আরও স্মরণীয় করে তুলুন।</p>
+</div>
+
+<div class="checks">
+<div class="check">💍 <b>বিয়ে ও দাওয়াতের জন্য</b></div>
+<div class="check">🎉 <b>পারিবারিক অনুষ্ঠানে</b></div>
+<div class="check">🌺 <b>পূজা ও উৎসবে</b></div>
+<div class="check">✨ <b>বিশেষ দিনের সাজে</b></div>
+<div class="check">🎁 <b>উপহার দেওয়ার জন্যও আদর্শ</b></div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="gallery">
+<div class="container">
+
+<div class="section-head">
+<h2>আমাদের গ্যালারি</h2>
+<p>প্রতিটি শাড়ীর সৌন্দর্য কাছ থেকে দেখুন</p>
+</div>
+
+<div class="products">
+<div class="visual" style="min-height:150px;font-size:22px">পাড়</div>
+<div class="visual" style="min-height:150px;font-size:22px">কাপড়</div>
+<div class="visual" style="min-height:150px;font-size:22px">আঁচল</div>
+<div class="visual" style="min-height:150px;font-size:22px">ব্লাউজ</div>
+</div>
+
+</div>
+</section>
+
+<section id="reviews">
+<div class="container">
+
+<div class="section-head">
+<h2>আমাদের কাস্টমাররাই আমাদের সবচেয়ে বড় পরিচয়</h2>
+<p>আপনাদের ভালোবাসাই আমাদের অনুপ্রেরণা</p>
+</div>
+
+<div class="reviews">
+
+<div class="review">
+<b>রাইহানা আক্তার</b>
+<div class="stars">★★★★★</div>
+<p>“শাড়ীটি খুব সুন্দর। হাতে পেয়ে ছবির চেয়েও ভালো লেগেছে।”</p>
+</div>
+
+<div class="review">
+<b>মাহমুদা ইসলাম</b>
+<div class="stars">★★★★★</div>
+<p>“কাপড়ের মান ও কাজ দুটোই সুন্দর। আবার অর্ডার করব।”</p>
+</div>
+
+<div class="review">
+<b>সাবিনা রহমান</b>
+<div class="stars">★★★★★</div>
+<p>“প্যাকেজিং সুন্দর ছিল এবং শাড়ীটি খুবই পছন্দ হয়েছে।”</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="offer">
+<div class="container offer-grid">
+
+<div>
+<h2>🔥 বিশেষ অফার চলছে!</h2>
+<p>আপনার পছন্দের শাড়ীটি আজই অর্ডার করুন।</p>
+</div>
+
+<a class="btn light" href="#order">এখনই অর্ডার করুন</a>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<div class="section-head">
+<h2>কীভাবে অর্ডার করবেন?</h2>
+<p>মাত্র ৩টি সহজ ধাপে</p>
+</div>
+
+<div class="steps">
+
+<div class="step">
+<b>01</b>
+<h3>শাড়ী নির্বাচন করুন</h3>
+<p>আপনার পছন্দের কালেকশন বেছে নিন।</p>
+</div>
+
+<div class="step">
+<b>02</b>
+<h3>আপনার তথ্য দিন</h3>
+<p>নাম, মোবাইল ও ঠিকানা দিন।</p>
+</div>
+
+<div class="step">
+<b>03</b>
+<h3>অর্ডার কনফার্ম করুন</h3>
+<p>WhatsApp-এ অর্ডার পাঠান।</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="order">
+<div class="container order-wrap">
+
+<div class="formbox">
+
+<h3>আপনার অর্ডারটি এখনই কনফার্ম করুন</h3>
+
+<form id="orderForm">
+
+<label>নাম *</label>
+<input id="name" required placeholder="আপনার নাম">
+
+<label>মোবাইল নম্বর *</label>
+<input
+id="phone"
+required
+inputmode="tel"
+pattern="01[3-9][0-9]{8}"
+maxlength="11"
+placeholder="01XXXXXXXXX"
+>
+
+<label>সম্পূর্ণ ঠিকানা *</label>
+<textarea
+id="address"
+required
+rows="3"
+placeholder="বাড়ি, রোড, এলাকা, জেলা">
+</textarea>
+
+<label>শাড়ী নির্বাচন করুন</label>
+
+<select id="product">
+<option>⏳ লোড হচ্ছে...</option>
+</select>
+
+<label>Quantity</label>
+<input id="qty" type="number" min="1" value="1">
+
+<button class="btn full" type="submit">
+🛍️ অর্ডার কনফার্ম করুন
+</button>
+
+</form>
+</div>
+
+<div class="faq" id="faq">
+
+<h3>প্রশ্নোত্তর (FAQ)</h3>
+
+<details>
+<summary>ডেলিভারি কত দিনে হবে?</summary>
+<p>আপনার এলাকার ওপর ডেলিভারি সময় নির্ভর করবে।</p>
+</details>
+
+<details>
+<summary>Cash on Delivery আছে?</summary>
+<p>হ্যাঁ, প্রযোজ্য পণ্যের ক্ষেত্রে।</p>
+</details>
+
+<details>
+<summary>শাড়ীর সাথে ব্লাউজ পিস আছে?</summary>
+<p>পণ্যের বিবরণে উল্লেখ করা থাকবে।</p>
+</details>
+
+<details>
+<summary>Exchange/Return করা যায়?</summary>
+<p>সমস্যা হলে দ্রুত WhatsApp-এ যোগাযোগ করুন।</p>
+</details>
+
+</div>
+</div>
+</section>
+
+<section class="final">
+<div class="container">
+
+<h2>
+অদ্বিতীয়া শাড়ী—আপনার সৌন্দর্যের নিজস্ব গল্প। ❤️
+</h2>
+
+<p>আজই আপনার পছন্দের শাড়ীটি বেছে নিন।</p>
+
+<a class="btn" href="#order">🛍️ এখনই অর্ডার করুন</a>
+
+</div>
+</section>
+
+<footer>
+<div class="container footer">
+
+<div>
+<b>অদ্বিতীয়া শাড়ী</b>
+<br>
+<small>ঐতিহ্য • সৌন্দর্য • আধুনিকতা</small>
+</div>
+
+<small>
+© 2026 অদ্বিতীয়া শাড়ী — সর্বস্বত্ব সংরক্ষিত
+</small>
+
+</div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/8801620393017">
+💬 WhatsApp-এ অর্ডার
+</a>
 
 <script>
+
 const SUPABASE_URL="https://mwwcjzphynpnyuofztrj.supabase.co";
+
 const SUPABASE_KEY="sb_publishable_ZQgpmqi1cBnm6b0lyTOXXQ_sQQnLPc4";
+
 const WA="8801620393017";
+
 let products=[];
 
-const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));
-const money=v=>v==null||v===""?"":"৳"+Number(v).toLocaleString("bn-BD");
+const esc=v=>
+String(v??"").replace(
+/[&<>"']/g,
+c=>({
+"&":"&amp;",
+"<":"&lt;",
+">":"&gt;",
+'"':"&quot;",
+"'":"&#039;"
+}[c])
+);
+
+const money=v=>
+v==null||v===""
+?""
+:"৳"+Number(v).toLocaleString("bn-BD");
 
 async function loadProducts(){
- const grid=document.getElementById("productsGrid");
- try{
-  const url=SUPABASE_URL+"/rest/v1/products?select=id,name,description,regular_price,offer_price,image_url,badge,sort_order,active&active=eq.true&order=sort_order.asc";
-  const r=await fetch(url,{headers:{apikey:SUPABASE_KEY,Authorization:"Bearer "+SUPABASE_KEY}});
-  if(!r.ok) throw new Error(await r.text());
-  products=await r.json();
-  if(!products.length){grid.innerHTML='<div class="error">এখন কোনো active product নেই।</div>';return}
-  grid.innerHTML=products.map(p=>`<article class="product"><div class="product-img">${p.image_url?`<img src="${esc(p.image_url)}" alt="${esc(p.name)}" loading="lazy" onerror="this.style.display='none'">`:`<span>SAREE</span>`}</div><div class="product-body">${p.badge?`<span class="badge">${esc(p.badge)}</span>`:""}<h3>${esc(p.name)}</h3><p>${esc(p.description||"Premium quality saree")}</p>${p.regular_price>p.offer_price?`<span class="old">${money(p.regular_price)}</span>`:""}<span class="price">${money(p.offer_price??p.regular_price)}</span><br><a class="btn" style="margin-top:10px;padding:8px 15px" href="#order" data-p="${esc(p.name)}">অর্ডার করুন</a></div></article>`).join("");
-  document.getElementById("product").innerHTML=products.map(p=>`<option value="${esc(p.name)}">${esc(p.name)} — ${money(p.offer_price??p.regular_price)}</option>`).join("");
-  document.querySelectorAll("[data-p]").forEach(b=>b.onclick=()=>document.getElementById("product").value=b.dataset.p);
- }catch(e){
-  console.error(e);
-  grid.innerHTML='<div class="error">⚠️ Product load হয়নি। Supabase Data API, RLS এবং Public SELECT policy পরীক্ষা করুন।</div>';
-  document.getElementById("product").innerHTML='<option>Product load হয়নি</option>';
- }
+
+const grid=document.getElementById("productsGrid");
+
+try{
+
+const url=
+SUPABASE_URL+
+"/rest/v1/products?select=id,name,description,regular_price,offer_price,image_url,badge,sort_order,active&active=eq.true&order=sort_order.asc";
+
+const r=await fetch(
+url,
+{
+headers:{
+apikey:SUPABASE_KEY,
+Authorization:"Bearer "+SUPABASE_KEY
+}
+}
+);
+
+if(!r.ok) throw new Error(await r.text());
+
+products=await r.json();
+
+if(!products.length){
+
+grid.innerHTML=
+'<div class="error">এখন কোনো active product নেই।</div>';
+
+return;
+}
+
+grid.innerHTML=products.map(p=>`
+
+<article class="product">
+
+<div class="product-img">
+
+${
+p.image_url
+?
+`<img
+src="${esc(p.image_url)}"
+alt="${esc(p.name)}"
+loading="lazy"
+onerror="this.style.display='none'"
+>`
+:
+`<span>SAREE</span>`
+}
+
+</div>
+
+<div class="product-body">
+
+${
+p.badge
+?
+`<span class="badge">${esc(p.badge)}</span>`
+:
+""
+}
+
+<h3>${esc(p.name)}</h3>
+
+<p>
+${esc(p.description||"Premium quality saree")}
+</p>
+
+${
+p.regular_price>p.offer_price
+?
+`<span class="old">${money(p.regular_price)}</span>`
+:
+""
+}
+
+<span class="price">
+${money(p.offer_price??p.regular_price)}
+</span>
+
+<br>
+
+<a
+class="btn"
+style="margin-top:10px;padding:8px 15px"
+href="#order"
+data-p="${esc(p.name)}"
+>
+অর্ডার করুন
+</a>
+
+</div>
+
+</article>
+
+`).join("");
+
+document.getElementById("product").innerHTML=
+products.map(p=>
+`
+<option value="${esc(p.name)}">
+${esc(p.name)} — ${money(p.offer_price??p.regular_price)}
+</option>
+`
+).join("");
+
+document.querySelectorAll("[data-p]").forEach(b=>
+b.onclick=()=>
+document.getElementById("product").value=b.dataset.p
+);
+
+}catch(e){
+
+console.error(e);
+
+grid.innerHTML=
+'<div class="error">⚠️ Product load হয়নি। Supabase Data API, RLS এবং Public SELECT policy পরীক্ষা করুন।</div>';
+
+document.getElementById("product").innerHTML=
+'<option>Product load হয়নি</option>';
+
+}
+
 }
 
 document.getElementById("orderForm").onsubmit=e=>{
- e.preventDefault();
- const phone=document.getElementById("phone").value.trim();
- if(!/^01[3-9]\d{8}$/.test(phone)){alert("সঠিক ১১ সংখ্যার বাংলাদেশি মোবাইল নম্বর দিন।");return}
- const text=`অদ্বিতীয়া শাড়ী - অর্ডার\nনাম: ${document.getElementById("name").value.trim()}\nমোবাইল: ${phone}\nঠিকানা: ${document.getElementById("address").value.trim()}\nপণ্য: ${document.getElementById("product").value}\nQuantity: ${document.getElementById("qty").value}`;
- window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(text),"_blank");
+
+e.preventDefault();
+
+const phone=
+document.getElementById("phone").value.trim();
+
+if(!/^01[3-9]\d{8}$/.test(phone)){
+
+alert("সঠিক ১১ সংখ্যার বাংলাদেশি মোবাইল নম্বর দিন।");
+
+return;
+}
+
+const text=
+`অদ্বিতীয়া শাড়ী - অর্ডার
+নাম: ${document.getElementById("name").value.trim()}
+মোবাইল: ${phone}
+ঠিকানা: ${document.getElementById("address").value.trim()}
+পণ্য: ${document.getElementById("product").value}
+Quantity: ${document.getElementById("qty").value}`;
+
+window.open(
+"https://wa.me/"+WA+"?text="+encodeURIComponent(text),
+"_blank"
+);
+
 };
+
 loadProducts();
+
 </script>
+
 </body>
 </html>
